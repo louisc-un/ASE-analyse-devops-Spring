@@ -136,17 +136,11 @@ Le processus de build est configuré pour inclure des liens vers diverses docume
 
 Pour la partie Intégration Continue, Spring utilise Concourses facilitant la construction automatisée. On peut retrouver une instance dédiée de Concourses accessible [ici](https://ci.spring.io). 
 
-Au cœur de ce processus se trouve le fichier `pipeline.yml` qui répertorie les ressources Concourses, c’est-à-dire les entrées et sorties de la construction comme les images de conteneurs, dépôts d'artefacts et de source, ect. Il décrit également les "jobs", soit une séquence d'entrées, de tâches et de sorties orchestrant ainsi le flux de travail de la construction automatisée. Les jobs sont regroupés par groupe (CF. Image ci-dessous pour le module FrameWork).
-
-***IMAGE1***
+Au cœur de ce processus se trouve le fichier `pipeline.yml` qui répertorie les ressources Concourses, c’est-à-dire les entrées et sorties de la construction comme les images de conteneurs, dépôts d'artefacts et de source, ect. Il décrit également les "jobs", soit une séquence d'entrées, de tâches et de sorties orchestrant ainsi le flux de travail de la construction automatisée. Les jobs sont regroupés par groupe (CF. Image ci-dessous pour le module Framework).
 
 ![builds](https://github.com/louisc-un/ASE-analyse-devops-Spring/blob/main/builds.png)
 
-***IMAGE2***
-
 ![releases](https://github.com/louisc-un/ASE-analyse-devops-Spring/blob/main/releases.png)
-
-***IMAGE3***
 
 ![ci-images](https://github.com/louisc-un/ASE-analyse-devops-Spring/blob/main/ci-images.png)
 
