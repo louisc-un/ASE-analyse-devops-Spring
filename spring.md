@@ -168,7 +168,7 @@ Une piste d'amélioration qui permettrait une meilleure transparence sur la gest
 
 Une autre amélioration est de rendre publique plus de tests dans le cadre du développement des différents modules. La transparence des tests peut offrir aux développeurs externes une meilleure compréhension du fonctionnement du framework et de ses fonctionnalités. Cela favorise également la confiance des utilisateurs, pouvant ainsi développer en se basant sur plus de tests robustes évitant tout problèmes futurs avec certaines features.
 
-# Conslusion
+# Conclusion
 
 On peut constater au travers de ce document que l’équipe qui est derrière le développement du framework Spring fait utilisation de nombreuses techniques favorisant les bonnes pratiques du DevOps. Celles-ci sont nécessaires pour maintenir le rythme effréné de mise en production qu’a pris ce projet open source utilisé massivement dans le monde de l’entreprise. 
 
