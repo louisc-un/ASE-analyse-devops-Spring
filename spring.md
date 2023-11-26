@@ -140,9 +140,15 @@ Au cœur de ce processus se trouve le fichier `pipeline.yml` qui répertorie les
 
 ***IMAGE1***
 
+![builds](https://github.com/louisc-un/ASE-analyse-devops-Spring/blob/main/builds.png)
+
 ***IMAGE2***
 
+![releases](https://github.com/louisc-un/ASE-analyse-devops-Spring/blob/main/releases.png)
+
 ***IMAGE3***
+
+![ci-images](https://github.com/louisc-un/ASE-analyse-devops-Spring/blob/main/ci-images.png)
 
 ### Analyse de Code et Sécurité
 
