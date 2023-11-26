@@ -64,7 +64,7 @@ Ici, Spring Framework déploie une version principale du projet sur la branche p
 
 Ces versions principales sont supportées et maintenues pendant une période de deux ans, ce qui laisse le temps aux développeurs utilisant le framework de migrer sur une version plus récente pour rester à jour sur les nouvelles fonctionnalités et mises à jour de sécurité. 
 
-Des versions LTS (pour Long Time Supported) sont des versions qui restent plus longtemps maintenues. Spring déploie une version LTS tous les 4 ans. A l’heure d’aujourd’hui, la plus récente est la version 5.3. 
+Des versions LTS (pour Long Time Supported) sont des versions qui restent plus longtemps maintenues. Spring déploie une version LTS tous les 4 ans. A l’heure d’aujourd’hui, la plus récente est la version `5.3`. 
 
 Il est à noter que des versions tests, appelées versions "snapshot", sont également mises en production à une fréquence moins régulière et plus aléatoire. En ce qui concerne les correctifs, ils sont déployés une fois par mois.
 
