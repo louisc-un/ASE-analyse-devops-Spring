@@ -16,7 +16,7 @@ Le projet que nous avons sélectionné est le framework Spring, développé par 
 
 ## Contexte et domaine d'application
 
-Les entreprises développant des produits logiciels ont de plus en plus recours à des frameworks (cadriciel en français) pour les aider pendant leur phase de développement. Ceux-ci offrent une base commune pour que les développeurs n’aient pas à repartir de zéro et de nombreux outils y sont inclus pour grandement faciliter la mise en place d’applications et services diverses. De cette manière, ces "boites à outils" éliminent une grande partie du travail et font gagner beaucoup de temps et d'efficacité aux entreprises. Les frameworks visent à éviter aux développeurs de devoir réinventer la roue.
+Les entreprises développant des produits logiciels ont de plus en plus recours à des frameworks (cadriciel en français) pour les aider pendant leur phase de développement. Ceux-ci offrent une base commune pour que les développeurs n’aient pas à repartir de zéro et de nombreux outils y sont inclus pour grandement faciliter la mise en place d’applications et services divers. De cette manière, ces "boites à outils" éliminent une grande partie du travail et font gagner beaucoup de temps et d'efficacité aux entreprises. Les frameworks visent à éviter aux développeurs de devoir réinventer la roue.
 
 Spring est un framework open source sur lequel peut être développé n’importe quelle application Java, généralement des applications web ou des back-ends exposant une API REST. Spring est très largement utilisé dans le monde de l’entreprise. Les grands avantages de ce framework résident dans sa légèreté, sa rapidité et sa modularité.
 
@@ -48,7 +48,7 @@ Pour favoriser cette mesure, plusieurs facteurs sont mis en place.
 
 Premièrement, l'incontournable gestionnaire de versions Git est utilisé pour gérer les différentes versions du projet et de permettre un développement des différentes fonctionnalités en parallèle. Cet outil propose ainsi un système de branches et de commits. Le plus célèbre est GitHub, utilisé ici par le projet. 
 
-En deuxième lieu, on retrouve également en tendance chez les développeurs pour ce projet la création de petits commits au sein du dépôt de code, ceux-ci favorisant une clarté dans l’historique des modifications et une meilleure traçabilité pour remonter des occasionnels bugs. Dans cette même logique, toutes les modifications et ajouts de fonctionnalités sont créés dans des branches bien distinctes les unes des autres. Les features sont ajoutées de façon indépendante, ce qui permet une meilleure séparation et distribution des tâches. Ces nouvelles fonctionnalités sont alors fusionnées avec des branches plus importantes par le biais de petites pull requests. On peut clairement identifier cette façon de fonctionner dans le dépôt du projet. 
+En deuxième lieu, on retrouve également en tendance chez les développeurs pour ce projet la création de petits commits au sein du dépôt de code, ceux-ci favorisant une clarté dans l’historique des modifications et une meilleure traçabilité pour remonter d’occasionnels bugs. Dans cette même logique, toutes les modifications et ajouts de fonctionnalités sont créés dans des branches bien distinctes les unes des autres. Les features sont ajoutées de façon indépendante, ce qui permet une meilleure séparation et distribution des tâches. Ces nouvelles fonctionnalités sont alors fusionnées avec des branches plus importantes par le biais de petites pull requests. On peut clairement identifier cette façon de fonctionner dans le dépôt du projet. 
 
 Une autre façon de minimiser le temps pour la métrique du "lead time" est de maximiser le nombre de releases pour le projet. On effectue pour Spring en moyenne 2 à 3 releases par mois, ces releases incluant toutes les nouvelles fonctionnalités ainsi que toutes les corrections de bugs effectuées. Ces releases comprennent également des améliorations dans la documentation mais également des mises à jour de dépendances à d'autres outils et projets. 
 
@@ -64,7 +64,7 @@ Ici, Spring Framework déploie une version principale du projet sur la branche p
 
 Ces versions principales sont supportées et maintenues pendant une période de deux ans, ce qui laisse le temps aux développeurs utilisant le framework de migrer sur une version plus récente pour rester à jour sur les nouvelles fonctionnalités et mises à jour de sécurité. 
 
-Des versions LTS (pour Long Time Supported) sont des versions qui restent plus longtemps maintenues. Spring déploie une version LTS tous les 4 ans. A l’heure d’aujourd’hui, la plus récente est la version `5.3`. 
+Des versions LTS (pour Long Time Supported) sont des versions qui restent plus longtemps maintenues. Spring déploie une version LTS tous les 4 ans.  À l'heure actuelle, la plus récente est la version `5.3`. 
 
 Il est à noter que des versions tests, appelées versions "snapshot", sont également mises en production à une fréquence moins régulière et plus aléatoire. En ce qui concerne les correctifs, ils sont déployés une fois par mois.
 
@@ -78,11 +78,11 @@ Les employés chez cette dernière sont très réactifs et acceptent rapidement 
 
 Avant d'accepter toutes formes de modification dans une branche de release, une série de tests automatiques est exécutée pour s'assurer de la stabilité du code produit. 
 
-Enfin, sans réellement trouver de chiffres exacts, on peut supposer que cette métrique est très petite. Cette supposition se construit autour du fait que pour des erreurs critiques trouvées au sein d’une version en production, des correctifs d’urgence peuvent être produits et déployés par l'équipe de développement. Un exemple parmi d’autres est une faille de sécurité de type RCE (Remote Code Execution) qui a été découverte en 2022 par un utilisateur du framework. Un correctif d’urgence a été mis en production deux jours après que cet utilisateur l'ait reporté en interne à l’équipe chez VMware. VMWare Tanzu opte pour la transparence lors de ce genre d’évènement en publiant régulièrement sur le [blog](https://spring.io/blog/) du framework.
+Enfin, sans réellement trouver de chiffres exacts, on peut supposer que cette métrique est très petite. Cette supposition se construit autour du fait que pour des erreurs critiques trouvées au sein d’une version en production, des correctifs d’urgence peuvent être produits et déployés par l'équipe de développement. Un exemple parmi d’autres est une faille de sécurité de type RCE (Remote Code Execution) qui a été découverte en 2022 par un utilisateur du framework. Un correctif d’urgence a été mis en production deux jours après que cet utilisateur l'ait reporté en interne à l’équipe chez VMware. VMWare Tanzu opte pour la transparence lors de ce genre d’événement en publiant régulièrement sur le [blog](https://spring.io/blog/) du framework.
 
 ### Change fail percentage 
 
-Il est compliqué de deviner cette métrique qui s'intéresse au pourcentage de déploiements qui provoquent une erreur en production si les chiffres ne sont pas implicitement communiqués. La meilleure solution est d’étudier la fréquence des commits qui sont effectués et celle du nombre d’issues qui sont ouvertes et fermées. 
+Il est compliqué de deviner cette métrique qui s'intéresse au pourcentage de déploiements provoquant une erreur en production si les chiffres ne sont pas implicitement communiqués. La meilleure solution est d’étudier la fréquence des commits qui sont effectués et celle du nombre d’issues qui sont ouvertes et fermées. 
 
 Ci-dessous sont listés les chiffres que l’on peut trouver à l’aide de l’outil d’analyse de projet sur le dépôt du projet sur GitHub. Ceux-ci datent du mois dernier.
 
@@ -98,7 +98,7 @@ Ci-dessous sont listés les chiffres que l’on peut trouver à l’aide de l’
 
 - 23467 issues clôturées 
 
-- 729 issues ouverte
+- 729 issues ouvertes
 
 ## Description du pipeline de développement
 
@@ -114,11 +114,11 @@ Spring n’expose pas publiquement de roadmap ou de programme de planification c
 
 ### Gestion de Code Source 
 
-L’outil pour la gestion du Code Source des différents modules de Spring s’appuie sur GitHub, facilitant le travail d’équipe et le suivi des modification apportés au code. 
+L’outil pour la gestion du Code Source des différents modules de Spring s’appuie sur GitHub, facilitant le travail d’équipe et le suivi des modifications apportés au code. 
 
 Les branches sont nommées en fonction de la version du projet, respectant le Release Pattern. Tant que la branche est supportée celle-ci reçoit des modifications régulières, principalement l’ajout de petites fonctionnalités et des correctifs, en utilisant du rétroportage, consistant à récupérer une nouvelle modification et le déployer dans une ancienne version du service. Une fois que la version n’est plus prise en charge, la branche est clôturée empêchant de nouvelles modifications. 
 
-On retrouve également d’autres branches, comme `docs-build`, une branche dédiée à la construction de la documentation. Également la branche `main` contient la version la plus récente du projet. 
+On retrouve également d’autres branches, comme `docs-build`, une branche dédiée à la construction de la documentation. La branche `main` contient la version la plus récente du projet. 
 
 On retrouve l’utilisation de tag et d’assignation de tâches dans les issues.
 
@@ -128,7 +128,7 @@ La gestion du processus de build automatisé dans le cadre des modules de Spring
 
 L’outil de build privilégié par Spring est Gradle. L'utilisation de scripts Gradle simplifie la définition des dépendances, des plugins et des actions spécifiques au build, facilitant ainsi la maintenance et l'évolution des modules. 
 
-Le support de JUnit5 est intégré au processus de build automatisé. Cela permet l'exécution de tests unitaires de manière systématique à chaque modification, permettant d’identifier rapidement d’éventuels problèmes dans les modifications récente. D’autres dépendances telles que Mockito et AssertJ sont inclues dans le build, offrant des outils supplémentaires pour les tests automatisés. 
+Le support de JUnit5 est intégré au processus de build automatisé. Cela permet l'exécution de tests unitaires de manière systématique à chaque modification, permettant d’identifier rapidement d’éventuels problèmes dans les modifications récentes. D’autres dépendances telles que Mockito et AssertJ sont incluses dans le build, offrant des outils supplémentaires pour les tests automatisés. 
 
 Le processus de build est configuré pour inclure des liens vers diverses documentations Javadoc externes pour faciliter la génération de la documentation. Ces liens incluent des sources telles qu'Oracle JDK, Jakarta EE, IBM WebSphere, Hibernate, Jackson et d'autres.
 
@@ -136,7 +136,7 @@ Le processus de build est configuré pour inclure des liens vers diverses docume
 
 Pour la partie Intégration Continue, Spring utilise Concourses facilitant la construction automatisée. On peut retrouver une instance dédiée de Concourses accessible [ici](https://ci.spring.io). 
 
-Au cœur de ce processus se trouve le fichier `pipeline.yml` qui répertorie les ressources Concourses, c’est-à-dire les entrées et sorties de la construction comme les images de conteneurs, dépôts d'artefacts et de source, ect. Il décrit également les "jobs", soit une séquence d'entrées, de tâches et de sorties orchestrant ainsi le flux de travail de la construction automatisée. Les jobs sont regroupés par groupe (CF. Image ci-dessous pour le module Framework).
+Au cœur de ce processus se trouve le fichier `pipeline.yml` qui répertorie les ressources Concourses, c’est-à-dire les entrées et sorties de la construction comme les images de conteneurs, dépôts d'artefacts et de source, etc. Il décrit également les "jobs", soit une séquence d'entrées, de tâches et de sorties orchestrant ainsi le flux de travail de la construction automatisée. Les jobs sont regroupés par groupe (cf. Image ci-dessous pour le module Framework).
 
 ![builds](https://github.com/louisc-un/ASE-analyse-devops-Spring/blob/main/builds.png)
 
@@ -156,17 +156,17 @@ Spring propose une documentation complète couvrant une gamme diversifiée de su
 
 ### Lean management 
 
-Spring adopte les méthodes agiles dans leur processus de travail, permettant aux clients de participer tout au long de l'avancement d'un projet. Cette méthode a pour objectif de livrer rapidement des fonctionnalités et d'ajuster facilement des modifications en fonction des retours continus. L'équipe Spring partage de manière récurrente leur connaissance et expériences en matière de méthodes agiles et DevOps à travers leur blog offrant une ressource supplémentaire à la communauté cherchant à appliquer ces concepts.
+Spring adopte les méthodes agiles dans leur processus de travail, permettant aux clients de participer tout au long de l'avancement d'un projet. Cette méthode a pour objectif de livrer rapidement des fonctionnalités et d'ajuster facilement des modifications en fonction des retours continus. L'équipe Spring partage de manière récurrente leurs connaissances et expériences en matière de méthodes agiles et DevOps à travers leur blog offrant une ressource supplémentaire à la communauté cherchant à appliquer ces concepts.
 
 ## Propositions d'améliorations
 
 ### Planification et roadmap
 
-Une piste d'amélioration qui permettrait une meilleure transparence sur la gestion des tâches et tickets distribués en interne serait de rendre publique une roadmap de leur planification de projet. De cette manière, les développeurs externes et utilisateurs du projet peuvent avoir un meilleur aperçu global de l’avancement de la release et aider au mieux au développement s’ils le souhaitent. Sans cela, il est difficile de savoir quelles tâches ont été réalisées récemment, celles sur lesquelles les efforts sont placés actuellement et celles qui sont prévus dans le futur. 
+Une piste d'amélioration qui permettrait une meilleure transparence sur la gestion des tâches et la vision future du projet serait de rendre public leur tableau Kanban et de fournir une roadmap de leur planification de projet. De cette manière, les développeurs externes et utilisateurs du projet peuvent avoir un meilleur aperçu global de l’avancement de la release et aider au mieux au développement s’ils le souhaitent. Sans cela, il est difficile de savoir quelles tâches ont été réalisées récemment, celles sur lesquelles les efforts sont placés actuellement et celles qui sont prévues dans le futur. 
 
 ### Les tests 
 
-Une autre amélioration est de rendre publique plus de tests dans le cadre du développement des différents modules. La transparence des tests peut offrir aux développeurs externes une meilleure compréhension du fonctionnement du framework et de ses fonctionnalités. Cela favorise également la confiance des utilisateurs, pouvant ainsi développer en se basant sur plus de tests robustes évitant tout problèmes futurs avec certaines features.
+Une autre amélioration est de rendre publics les tests dans le cadre du développement des différents modules. La transparence des tests peut offrir aux développeurs externes une meilleure compréhension du fonctionnement du framework et de ses fonctionnalités. Cela favorise également la confiance des utilisateurs, pouvant ainsi développer en se basant sur plus de tests robustes évitant tout problème futur avec certaines features.
 
 # Conclusion
 
